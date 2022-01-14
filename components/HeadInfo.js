@@ -5,6 +5,9 @@ function HeadInfo({title, keywords, contents}) {
         <div>
             <Head>
                 <title>{title}</title>
+                <meta charSet="utf-8" />
+                <meta httpEquiv="content-type" content="text/html" charSet='utf-8' />
+                <meta name="robots" content="index, follow" />
                 <meta keywords={keywords}/>
                 <meta contents={contents}/>
             </Head>
@@ -14,8 +17,8 @@ function HeadInfo({title, keywords, contents}) {
 
 HeadInfo.defaultProps = {
     title: 'My Blog',
-    keywords: 'My Blog powered by Next.js',
-    contents: 'Practice Next.js'
+    keywords: 'Next.js 로 구동되는 사이트',
+    contents: 'Next.js 연습'
 }
 
 export default HeadInfo

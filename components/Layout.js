@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Nav from './Nav';
 import HeadInfo from './HeadInfo';
 
