@@ -4,7 +4,7 @@
     grid-gap: 1rem;
 }
 
-.photos li {
+.photos li a {
     display: flex;
     flex-direction: column;
 }
