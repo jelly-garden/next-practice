@@ -24,13 +24,13 @@ export default function Home({posts}) {
 // }
 
 export const getStaticProps = async() => {
-const res = await fetch(`http://localhost:8080/api/posts`)
-const posts = await res.json();
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_start=0&_end=10`)
+  const posts = await res.json();
 
-return {
-    props: {
-        posts
-    },
-    revalidate: 20
-}
+  return {
+      props: {
+          posts
+      },
+      revalidate: 20
+  }
 }
